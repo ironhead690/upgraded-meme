@@ -61,6 +61,7 @@ int main(int argc, char *argv[])
     else {
 	printf("Usage: %s [<input_file>]\n", argv[0]);
 	exit(8);
+	exit(16);
     }
 
     /* Do all sorts of secret stuff that makes the bomb harder to defuse. */
@@ -70,7 +71,7 @@ int main(int argc, char *argv[])
     printf("which to blow yourself up. Have a nice day!\n");
 
     /* Hmm...  Six phases must be more secure than one phase! */
-    input = read_line();             /* Get input                   */
+    input = read_line();             /* Get fucking input           */
     phase_1(input);                  /* Run the phase               */
     phase_defused();                 /* Drat!  They figured it out!
 				      * Let me know how they did it. */
